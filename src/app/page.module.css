@@ -1,0 +1,109 @@
+.newbg {
+	background: rgb(37, 37, 37);
+	background: radial-gradient(circle, rgb(41, 41, 41) 2%, rgb(12, 12, 12) 30%);
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #121212;
+	font-family: "Lexend Deca", serif;
+	z-index: 2;
+}
+
+.left {
+	color: white;
+	font-size: 24px;
+}
+
+.left p {
+	margin: 0;
+	padding: 1rem;
+}
+
+.right a {
+	text-decoration: none;
+	color: white;
+	margin: 0 0.4rem 0 0.5rem;
+	transition: opacity 400ms ease;
+	font-size: 16px;
+}
+
+.header:hover>.right a {
+	opacity: 0.5;
+}
+
+.header:hover>.right a:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+.footer {
+	bottom: 0;
+	width: 100%;
+	position: fixed;
+	background-color: #121212;
+	color: white;
+	font-family: "Poppins", serif;
+	z-index: 2;
+}
+
+.footer p {
+	text-align: center;
+	font-size: 14px;
+	margin: 0;
+	padding: 0.6rem;
+	font-family: "Poppins", serif;
+}
+
+.content {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contentContainer {
+	display: block;
+}
+
+.contentContainer a {
+	text-decoration: none;
+	color: white;
+}
+
+.manga,
+.anime,
+.kdrama {
+	background-color: #121212e0;
+	color: white;
+	margin-top: 5px;
+	border-radius: 5px;
+	transition: opacity 400ms ease;
+	padding: 0.4rem 2rem;
+	font-family: "Lexend Deca", serif;
+}
+
+.content:hover>.contentContainer div {
+	opacity: 0.5;
+}
+
+.content:hover>.contentContainer div:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+.netlifyLogo {
+	position: fixed;
+	bottom: 0;
+	margin: 0rem 0.4rem 1.6rem 0.4rem;
+}
+
+.netlifyLogo img {
+	aspect-ratio: 16 / 9;
+	height: 100px
+}

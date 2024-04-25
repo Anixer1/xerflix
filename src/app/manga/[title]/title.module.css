@@ -1,0 +1,75 @@
+.Main {
+	max-width: 95%;
+	margin: 60px auto;
+}
+
+.MangaContainer {
+	display: flex;
+	flex-direction: column;
+}
+
+.SearchedFor {
+	color: white;
+	text-align: center;
+	font-family: "Lexend Deca", serif;
+	font-size: 26px;
+}
+
+.MangaEntries {
+	display: flex;
+	flex-direction: row;
+	margin: 0px 10px 10px 10px;
+	padding: 10px;
+	border-style: dotted;
+	border-color: #363636 #474747;
+	border-radius: 10px;
+	border-width: 4px;
+	align-items: center;
+	cursor: pointer;
+	transition: opacity 200ms linear, transform 200ms linear;
+}
+
+/* THIS WORKS*/
+.MangaContainer:hover .MangaEntries {
+	opacity: 0.5;
+}
+
+.MangaContainer:hover .MangaEntries:hover {
+	opacity: 1;
+	transform: scale(1.01);
+}
+
+.MangaInfo {
+	color: white;
+	margin-left: 20px;
+	font-family: "Atkinson Hyperlegible";
+}
+
+.MangaTitle {
+	font-family: "Lexend Deca", serif;
+	margin: 0px;
+	font-size: 22px;
+	color: var(--neon-green);
+}
+
+.MangaStatus {
+	color: var(--soft-purple);
+	font-family: "Poppins", serif;
+
+}
+
+.MangaVolume {
+	color: #FFACAC;
+	font-family: "Poppins", serif;
+}
+
+.MangaChapters {
+	color: #FFEBB4;
+	font-family: "Poppins", serif;
+}
+
+@media screen and (max-width: 768px) {
+	.Main {
+		max-width: 100%;
+	}
+}
