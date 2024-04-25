@@ -8,7 +8,7 @@ import { Analytics } from "@vercel/analytics/react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-	title: "Dramalama v2.0",
+	title: "XerFlix v2.0",
 	description:
 		"Online service to watch kdramas and anime for free. You can also read and download mangas for free.",
 };
